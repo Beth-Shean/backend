@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\CarouselItemsController;
+use App\Http\Controllers\Api\PromptController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,9 @@ Route::get('/carousel/{id}', [CarouselItemsController::class, 'show']);
 Route::post('/carousel', [CarouselItemsController::class, 'store']);
 Route::put('/carousel/{id}', [CarouselItemsController::class, 'update']);
 Route::delete('/carousel/{id}', [CarouselItemsController::class, 'destroy']);
+
+Route::get('/prompts', [PromptController::class, 'index']);
+Route::get('/prompts/{id}', [PromptController::class, 'show']);
+Route::post('/prompts', [PromptController::class, 'store']);
+Route::put('/prompts/{id}', [PromptController::class, 'update']);
+Route::delete('/prompts/{id}', [PromptController::class, 'delete']);
