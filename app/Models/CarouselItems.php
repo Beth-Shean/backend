@@ -21,7 +21,7 @@ class CarouselItems extends Model
      *
      * @var string
      */
-    protected $primaryKey = 'carousel_items_id';
+    protected $primaryKey = 'carousel_item_id';
 
     /**
      * The attributes that are mass assignable.
